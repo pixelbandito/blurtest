@@ -1,0 +1,32 @@
+body {margin: 0; padding: 0;}
+    .header {background-color: #333; line-height: 38px; height: 38px; color: #fff; position: fixed; top: 0; float: left; width: 100%; padding-right: 20px; overflow: hidden; text-align: center; z-index: 1; border-bottom: 1px solid #555;
+        -moz-box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        -moz-border-radius: 0 0 20px 0;
+        background-image: -moz-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,0), rgba(0,0,0,0), rgba(0,0,0,.1) );
+        }
+        .header .switch {float: left; padding: 0 0 0 20px; left: 0;}
+        .header .switch a {background: url(../images/iconClose.png) no-repeat center center; height: 38px; line-height: 38px; width: 16px; float: left; text-align: left; text-decoration: none; overflow: hidden; text-indent: -999em;}
+        .header .switch a, .header .switch a:hover, .header .switch a:focus, .header .switch a:active {color: #efefef; text-decoration: none;}
+        .header .switch a.on {display: none; background-image: url(../images/iconOpen.png);}
+        .header .form {padding: 0 20px; min-width: 400px;}
+            .field {display: inline-block;}
+            .field:before, .field:after {content: " "; display: inline-block; width: 1ex;}
+                .blurURL > .legend {text-align: left; display: inline-block; height: 0; width: 0; overflow: hidden; text-indent: -999em;}
+                .text {display: inline-block; height: 20px; line-height: 20px; margin-top: 9px; padding: 0 10px;
+                    background-image: -moz-linear-gradient(top, #fff, #efefef);
+                    -moz-box-shadow: 1px 1px 0 rgba(255,255,255,.8), -1px -1px 0 rgba(0,0,0,.8), 3px 3px 6px rgba(0,0,0,.2) inset;
+                    -moz-border-radius: 3px;
+                    }
+                    .text input {background: transparent none; border: 0 none; outline: 0 none;}
+                    input[type="text"].default {color: gray; font-style: italic;}
+                select {color: black;}
+                button {display: inline-block; height: 20px; line-height: 20px !important; margin-top: 9px; padding: 0 10px;
+                    background-image: -moz-linear-gradient(top, #eee, #ccc);
+                    -moz-box-shadow: -1px -1px 0 rgba(255,255,255,1), 1px 1px 0 rgba(0,0,0,.5), 3px 3px 6px rgba(0,0,0,.2);
+                    -moz-border-radius: 3px;
+                    display: inline-block;
+                    padding: 0 1ex;
+                    }
+    .main {height: 100%; position: fixed; width: 100%; top: 0;}
+        #blurredContent {height: 100%; width: 100%;}
+    .svg {height: 0; width: 0; overflow: hidden;}
