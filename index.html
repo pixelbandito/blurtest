@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Blurtest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Load any website and blur or gray it out to assist in reviewing the information hierarchy and accessibility.">
+    <meta name="author" content="pixelBandito">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/blurtest.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+  	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+  	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  	<link rel="shortcut icon" href="ico/favicon.png">
+  </head>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true" screen_capture_injected="true">
+
+    <!-- Toolbar -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="#">Blurtest</a>
+        <form class="navbar-form pull-left form-controls">
+          <input type="url" name="url" placeholder="Site URL">
+          <!-- <label for="blurriness">Blurriness</label> -->
+          <div class="input-append">
+            <input class="input-number" type="number" name="blurriness" id="blurriness" min="0" placeholder="0" val="0">
+            <span class="add-on">px</span>
+          </div>
+          <!-- <label for="grayness">Grayness</label> -->
+          <div class="input-append">
+            <input class="input-number" type="number" name="grayness" id="grayness" min="0" max="100" placeholder="0" val="0">
+            <span class="add-on">%</span>
+          </div>
+          <button type="submit" class="btn">Update</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Website to test -->
+    <div class="screen-options" style="-webkit-filter: grayscale(1) blur(5px)" data-blur="5" data-gray="50">
+      <iframe width="100%" height="100%" src="http://www.bazaarvoice.com" class="iframe-subject">
+      </iframe>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Analytics
+    ================================================== -->
+
+  </body>
+</html>

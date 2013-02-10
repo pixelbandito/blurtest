@@ -1,0 +1,17 @@
+.input-number {
+	width: 40px;
+}
+
+.navbar-form .input-append, .navbar-form .input-prepend {
+	margin-bottom: 0;
+	display: inline-block;
+}
+
+.iframe-subject {
+	position: fixed;
+	top: 40px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: auto;
+}
